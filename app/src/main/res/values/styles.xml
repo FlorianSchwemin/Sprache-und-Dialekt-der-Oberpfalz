@@ -1,0 +1,133 @@
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!--
+        Base application theme, dependent on API level. This theme is replaced
+        by AppBaseTheme from res/values-vXX/styles.xml on newer devices.
+    -->
+    <style name="AppBaseTheme" parent="android:Theme.Light">
+        <!--
+            Theme customizations available in newer API levels can go in
+            res/values-vXX/styles.xml, while customizations related to
+            backward-compatibility can go here.
+        -->
+    </style>
+
+    <!-- Application theme. -->
+    <style name="AppTheme" parent="AppBaseTheme">
+        <!-- All customizations that are NOT specific to a particular API-level can go here. -->
+    </style>
+
+    <style name="button_style_interview" parent="@android:style/Widget.Button">
+        <item name="android:textSize">15sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">#FFFFFF</item>
+        <item name="android:gravity">center</item>
+        <item name="android:shadowColor">#000000</item>
+        <item name="android:shadowDx">1</item>
+        <item name="android:shadowDy">1</item>
+        <item name="android:shadowRadius">0.6</item>
+        <item name="android:background">@drawable/custom_buttons_interview</item>
+        <item name="android:padding">10dip</item>
+    </style>
+
+    <style name="interview_box_style">
+        <item name="android:shadowDx">2</item>
+        <item name="android:shadowDy">2</item>
+        <item name="android:shadowRadius">1.2</item>
+        <item name="android:background">@drawable/custom_layout_interview</item>
+        <item name="android:shadowColor">#000000</item>
+    </style>
+
+    <style name="info_box_style">
+        <item name="android:shadowDx">2</item>
+        <item name="android:shadowDy">2</item>
+        <item name="android:shadowRadius">1.2</item>
+        <item name="android:background">@drawable/custom_layout_infobox</item>
+        <item name="android:shadowColor">#000000</item>
+    </style>
+
+    <style name="interview_more_info_text">
+        <item name="android:textSize">20sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">#FFFFFF</item>
+        <item name="android:gravity">center</item>
+        <item name="android:shadowColor">#000000</item>
+        <item name="android:shadowDx">1</item>
+        <item name="android:shadowDy">1</item>
+        <item name="android:shadowRadius">0.6</item>
+    </style>
+
+    <style name="more_info_title">
+        <item name="android:textSize">24sp</item>
+        <item name="android:textStyle">bold|italic</item>
+        <item name="android:textColor">@color/blue_text_color</item>
+        <item name="android:gravity">center</item>
+        <item name="android:shadowColor">#000000</item>
+        <item name="android:shadowDx">2</item>
+        <item name="android:shadowDy">2</item>
+        <item name="android:shadowRadius">1.6</item>
+    </style>
+
+    <style name="question_text_style">
+        <item name="android:textSize">50sp</item>
+        <item name="android:textStyle">italic</item>
+        <item name="android:textColor">#FFFFFF</item>
+        <item name="android:gravity">center</item>
+        <item name="android:shadowColor">#000000</item>
+        <item name="android:shadowDx">4</item>
+        <item name="android:shadowDy">4</item>
+        <item name="android:shadowRadius">1.6</item>
+    </style>
+
+    <style name="checkbox_style">
+        <item name="android:background">@drawable/checkbox_layout</item>
+    </style>
+
+    <style name="info_box_playbutton_style">
+        <item name="android:background">@drawable/info_box_play_button_custom</item>
+        <item name="android:padding">13dp</item>
+        <item name="android:layout_width">@dimen/info_box_playbutton_size</item>
+        <item name="android:layout_height">@dimen/info_box_playbutton_size</item>
+        <item name="android:onClick">onPlaySoundButtonClick</item>
+    </style>
+
+    <style name="info_box_playbutton_text_style">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">@dimen/info_box_play_button_text_size</item>
+        <item name="android:textColor">@color/default_text_color_light</item>
+        <item name="android:padding">6dp</item>
+        <item name="android:clickable">true</item>
+        <item name="android:onClick">onPlaySoundButtonClick</item>
+    </style>
+
+    <style name="MapButtonStyle">
+        <item name="android:background">@drawable/map_button_img</item>
+        <item name="android:layout_height">@dimen/map_button_size</item>
+        <item name="android:layout_width">@dimen/map_button_size</item>
+        <item name="android:onClick">onMapButtonClick</item>
+    </style>
+
+    <style name="QuizButtonStyle" parent="@android:style/Widget.Button">
+        <item name="android:background">@drawable/quiz_button</item>
+        <item name="android:layout_height">@dimen/quiz_button_height</item>
+        <item name="android:layout_width">@dimen/quiz_button_width</item>
+        <item name="android:onClick">onMapClick</item>
+    </style>
+
+    <style name="interview_person_image">
+        <item name="android:layout_height">@dimen/interview_image_height</item>
+        <item name="android:layout_width">@dimen/interview_image_width</item>
+    </style>
+
+    <style name="start_activity_map_button">
+        <item name="android:layout_height">@dimen/start_button_map_height</item>
+        <item name="android:layout_width">@dimen/start_button_map_width</item>
+    </style>
+    
+    <style name="start_activity_buttons">
+        <item name="android:layout_height">@dimen/start_buttons_height</item>
+        <item name="android:layout_width">@dimen/start_buttons_width</item>
+    </style>
+
+</resources>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- different drawables for the info box play buttons inside MapActivity -->
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+   
+    <item android:drawable="@drawable/speak_buttonpressed"
+          android:state_pressed="true" />
+    
+    <item android:drawable="@drawable/speak_button"
+          android:state_focused="true" />
+    
+    <item android:drawable="@drawable/speak_button" />
+</selector>

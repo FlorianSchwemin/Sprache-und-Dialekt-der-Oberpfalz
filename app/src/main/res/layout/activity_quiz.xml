@@ -1,0 +1,169 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_vorschlag_philipp_klein"
+    tools:context=".QuizActivity" >
+
+    <Button
+        android:id="@+id/back_button"
+        style="@style/button_style_interview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="15dp"
+        android:drawableLeft="@drawable/navigation_back"
+        android:text="@string/back"
+        android:textSize="@dimen/info_box_play_button_text_size" />
+
+    <TextView
+        android:id="@+id/fortschritt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="15dp"
+        android:text="@string/fortschritt_text"
+        android:textSize="35sp" />
+    <RelativeLayout 
+        android:id="@+id/fortschritt_boxes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/fortschritt"
+        android:layout_alignRight="@id/fortschritt"
+        android:layout_below="@id/fortschritt"
+        android:layout_marginTop="10dp">
+        
+        
+        <View 
+            android:id="@+id/checkbox_1"
+            style="@style/checkbox_style"
+            android:layout_height="30dp"
+            android:layout_width="30dp"
+            android:layout_marginLeft="10dp"/>
+        <View 
+            android:id="@+id/checkbox_2"
+            style="@style/checkbox_style"
+            android:layout_height="30dp"
+            android:layout_width="30dp"
+            android:layout_toRightOf="@id/checkbox_1"
+            android:layout_marginLeft="10dp"/>
+        <View 
+            android:id="@+id/checkbox_3"
+            style="@style/checkbox_style"
+            android:layout_height="30dp"
+            android:layout_width="30dp"
+            android:layout_toRightOf="@id/checkbox_2"
+            android:layout_marginLeft="10dp"/>
+        <View 
+            android:id="@+id/checkbox_4"
+            style="@style/checkbox_style"
+            android:layout_height="30dp"
+            android:layout_width="30dp"
+            android:layout_toRightOf="@id/checkbox_3"
+            android:layout_marginLeft="10dp"/>
+        <View 
+            android:id="@+id/checkbox_5"
+            style="@style/checkbox_style"
+            android:layout_height="30dp"
+            android:layout_width="30dp"
+            android:layout_toRightOf="@id/checkbox_4"
+            android:layout_marginLeft="10dp"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/fullscreen_content_controls"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_gravity="bottom" 
+          >
+        
+        
+        
+        <RelativeLayout
+            android:id="@+id/questoin_container"
+            style="@style/interview_box_style"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="50dp"
+            android:layout_marginRight="10dp"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/fragetext"
+                style="@style/question_text_style"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="15dp"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="100dp"
+                android:layout_marginTop="15dp"
+                android:text="@string/frage_1"
+                android:textColor="#FFFFFF"
+                android:textSize="50sp" />
+
+            <Button
+                android:id="@+id/quiz_play_button"
+                style="@style/info_box_playbutton_style"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginBottom="5dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="5dp" />
+        </RelativeLayout>
+
+        <Button
+            android:id="@+id/antwort_1_button"
+            style="@style/QuizButtonStyle"
+            android:layout_width="700dp"
+            android:layout_height="100dp"
+            android:layout_below="@id/questoin_container"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="30dp"
+            android:text="@string/anwort_11"
+            android:textSize="30sp"
+            android:drawableLeft="@drawable/button_answer_a"
+             />
+
+        <Button
+            android:id="@+id/antwort_2_button"
+            style="@style/QuizButtonStyle"
+            android:layout_width="700dp"
+            android:layout_height="100dp"
+            android:layout_alignLeft="@+id/antwort_1_button"
+            android:layout_below="@id/antwort_1_button"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:text="@string/anwort_12"
+            android:textSize="30sp" 
+            android:drawableLeft="@drawable/button_answer_b"/>
+
+        <Button
+            android:id="@+id/antwort_3_button"
+            style="@style/QuizButtonStyle"
+            android:layout_width="700dp"
+            android:layout_height="100dp"
+            android:layout_alignLeft="@+id/antwort_2_button"
+            android:layout_below="@+id/antwort_2_button"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:text="@string/anwort_13"
+            android:textSize="30sp" 
+            android:drawableLeft="@drawable/button_answer_c"/>
+    </RelativeLayout>
+
+      <ImageView 
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/quiz_title"
+        android:contentDescription="@string/start_quiz"/>
+</RelativeLayout>

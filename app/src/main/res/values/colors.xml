@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+   
+   
+    <color name="default_text_color_light">#cde</color>
+    <color name="blue_text_color">#86bcff</color>
+    <color name = "yellow_text_color">#fff229</color>
+    <color name= "red_progress_color">#ff6c52</color>
+     <color name= "info_box_title_color">#eee</color>
+
+</resources>

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Animation List for frame animation of pulsing MapButtons in MapActivity -->
+
+<animation-list xmlns:android="http://schemas.android.com/apk/res/android"
+    android:oneshot="false" >
+
+    <item
+        android:drawable="@drawable/map_button_anim_1"
+        android:duration="100"/>
+    <item
+        android:drawable="@drawable/map_button_anim_2"
+        android:duration="100"/>
+    <item
+        android:drawable="@drawable/map_button_anim_3"
+        android:duration="100"/>
+    <item
+        android:drawable="@drawable/map_button_anim_4"
+        android:duration="100"/>
+    <item
+        android:drawable="@drawable/map_button_anim_5"
+        android:duration="100"/>
+    <item
+        android:drawable="@drawable/map_button_anim_6"
+        android:duration="100"/>
+    <item
+        android:drawable="@drawable/map_button_anim_5"
+        android:duration="100"/>
+    <item
+        android:drawable="@drawable/map_button_anim_4"
+        android:duration="100"/>
+    <item
+        android:drawable="@drawable/map_button_anim_3"
+        android:duration="100"/>
+    <item
+        android:drawable="@drawable/map_button_anim_2"
+        android:duration="100"/>
+
+</animation-list>

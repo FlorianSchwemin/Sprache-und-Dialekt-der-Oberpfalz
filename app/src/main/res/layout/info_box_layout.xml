@@ -1,0 +1,57 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="400dp"
+    android:layout_height="match_parent" >
+
+    <TextView
+        android:id="@+id/titel_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/title_size" />
+
+    <TextView
+        android:id="@+id/box_text_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/title_size" />
+
+    <RelativeLayout
+        android:id="@+id/play_button_container"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/box_text_content" >
+
+        <Button
+            android:id="@+id/button1"
+            style="@style/MapButtonStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/av_play" />
+
+        <TextView
+            android:id="@+id/button_text1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@id/button1"
+            android:layout_toRightOf="@id/button1" />
+
+        <Button
+            android:id="@+id/button2"
+            style="@style/MapButtonStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/button1"
+            android:src="@drawable/av_play" />
+
+        <TextView
+            android:id="@+id/button_text2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@id/button2"
+            android:layout_toRightOf="@id/button2" />
+    </RelativeLayout>
+
+    <TextView>
+    </TextView>
+
+</RelativeLayout>

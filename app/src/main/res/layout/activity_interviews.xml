@@ -1,0 +1,318 @@
+<RelativeLayout xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_vorschlag_philipp_klein"
+    android:paddingLeft="@dimen/interview_activity_margin"
+    android:paddingRight="@dimen/interview_activity_margin"
+    tools:context=".InterviewActivity" >
+
+    <!-- BACK BUTTON - BACK TO START ACTIVITY -->
+
+    <Button
+        android:id="@+id/back_to_start"
+        style="@style/button_style_interview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:drawableLeft="@drawable/navigation_back"
+        android:text="@string/back"
+        android:textSize="@dimen/info_box_play_button_text_size" />
+
+    <!-- THE "BOX" ON THE LEFT SIDE WITH TWO OTHER LAYOUTS IN IT FOR TWO INTERVIEWED PERSONS -->
+
+    <LinearLayout
+        android:id="@+id/linear_layout_one"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@id/back_to_start"
+        android:orientation="vertical"
+        android:padding="10dp" >
+
+        <!-- INTERVIEWED PERSON ONE -->
+
+        <RelativeLayout
+            android:id="@+id/interview_one"
+            style="@style/interview_box_style"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:padding="10dp" >
+
+            <ImageView
+                android:id="@+id/image_one"
+                style="@style/interview_person_image"
+                android:background="@drawable/custom_image_shape"
+                android:contentDescription="@string/person_one"
+                android:src="@drawable/zehetner_done" />
+
+            <TextView
+                android:id="@+id/person_one_headline"
+                style="@style/more_info_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="50dp"
+                android:layout_marginTop="20dp"
+                android:layout_toRightOf="@id/image_one"
+                android:gravity="center_horizontal"
+                android:text="@string/person_one" />
+
+            <Button
+                android:id="@+id/interview_button_one"
+                style="@style/button_style_interview"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/person_one_headline"
+                android:layout_marginLeft="40dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_toRightOf="@id/image_one"
+                android:drawableLeft="@drawable/av_play"
+                android:text="@string/play_button_interview" />
+
+            <Button
+                android:id="@+id/more_info_button_one"
+                style="@style/button_style_interview"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/interview_button_one"
+                android:layout_marginLeft="40dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_toRightOf="@id/image_one"
+                android:drawableLeft="@drawable/info_button"
+                android:text="@string/more_info" />
+
+            <SeekBar
+                android:id="@+id/progress_bar_one"
+                android:layout_width="500dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/more_info_button_one"
+                android:layout_marginBottom="15dp"
+                android:layout_marginTop="55dp" />
+        </RelativeLayout>
+
+        <!-- INTERVIEWED PERSON TWO -->
+
+        <RelativeLayout
+            android:id="@+id/interview_two"
+            style="@style/interview_box_style"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:padding="10dp" >
+
+            <ImageView
+                android:id="@+id/image_two"
+                style="@style/interview_person_image"
+                android:background="@drawable/custom_image_shape"
+                android:contentDescription="@string/person_two"
+                android:src="@drawable/frances" />
+
+            <TextView
+                android:id="@+id/person_two_headline"
+                style="@style/more_info_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="50dp"
+                android:layout_marginTop="20dp"
+                android:layout_toRightOf="@id/image_two"
+                android:gravity="center_horizontal"
+                android:text="@string/person_two" />
+
+            <Button
+                android:id="@+id/interview_button_two"
+                style="@style/button_style_interview"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/person_two_headline"
+                android:layout_marginLeft="40dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_toRightOf="@id/image_two"
+                android:drawableLeft="@drawable/av_play"
+                android:text="@string/play_button_interview" />
+
+            <Button
+                android:id="@+id/more_info_button_two"
+                style="@style/button_style_interview"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/interview_button_two"
+                android:layout_marginLeft="40dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_toRightOf="@id/image_two"
+                android:drawableLeft="@drawable/info_button"
+                android:text="@string/more_info" />
+
+            <SeekBar
+                android:id="@+id/progress_bar_two"
+                android:layout_width="500dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/more_info_button_two"
+                android:layout_marginBottom="15dp"
+                android:layout_marginTop="78dp" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <!-- THE "BOX" ON THE RIGHT SIDE WITH TWO OTHER LAYOUTS IN IT FOR TWO INTERVIEWED PERSONS -->
+
+    <LinearLayout
+        android:id="@+id/linear_layout_two"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/back_to_start"
+        android:orientation="vertical"
+        android:padding="10dp" >
+
+        <!-- INTERVIEWED PERSON THREE -->
+
+        <RelativeLayout
+            android:id="@+id/interview_three"
+            style="@style/interview_box_style"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:padding="10dp" >
+
+            <TextView
+                android:id="@+id/person_three_headline"
+                style="@style/more_info_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="55dp"
+                android:layout_marginTop="20dp"
+                android:gravity="center_horizontal"
+                android:text="@string/person_three"
+                android:textSize="24sp" />
+
+            <Button
+                android:id="@+id/interview_button_three"
+                style="@style/button_style_interview"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/person_three_headline"
+                android:layout_marginLeft="50dp"
+                android:layout_marginTop="10dp"
+                android:drawableLeft="@drawable/av_play"
+                android:text="@string/play_button_interview" />
+
+            <Button
+                android:id="@+id/more_info_button_three"
+                style="@style/button_style_interview"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/interview_button_three"
+                android:layout_marginLeft="50dp"
+                android:layout_marginRight="50dp"
+                android:layout_marginTop="10dp"
+                android:drawableLeft="@drawable/info_button"
+                android:text="@string/more_info" />
+
+            <ImageView
+                android:id="@+id/image_three"
+                style="@style/interview_person_image"
+                android:layout_marginLeft="50dp"
+                android:layout_toRightOf="@id/interview_button_three"
+                android:background="@drawable/custom_image_shape"
+                android:contentDescription="@string/person_three"
+                android:src="@drawable/boris" />
+
+            <SeekBar
+                android:id="@+id/progress_bar_three"
+                android:layout_width="500dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/more_info_button_three"
+                android:layout_marginBottom="15dp"
+                android:layout_marginTop="55dp" />
+        </RelativeLayout>
+
+        <!-- INTERVIEWED PERSON FOUR -->
+
+        <RelativeLayout
+            android:id="@+id/interview_four"
+            style="@style/interview_box_style"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:padding="10dp" >
+
+            <TextView
+                android:id="@+id/person_four_headline"
+                style="@style/more_info_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="50dp"
+                android:layout_marginTop="20dp"
+                android:gravity="center_horizontal"
+                android:text="@string/person_four" />
+
+            <Button
+                android:id="@+id/interview_button_four_one"
+                style="@style/button_style_interview"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/person_four_headline"
+                android:layout_marginLeft="50dp"
+                android:layout_marginTop="10dp"
+                android:drawableLeft="@drawable/av_play"
+                android:text="@string/play_button_interview" />
+
+            <Button
+                android:id="@+id/interview_button_four_two"
+                style="@style/button_style_interview"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/interview_button_four_one"
+                android:layout_marginLeft="50dp"
+                android:layout_marginRight="50dp"
+                android:layout_marginTop="10dp"
+                android:drawableLeft="@drawable/av_play"
+                android:text="@string/play_button_bauvertrag" />
+
+            <Button
+                android:id="@+id/more_info_button_four"
+                style="@style/button_style_interview"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/interview_button_four_two"
+                android:layout_marginLeft="50dp"
+                android:layout_marginTop="10dp"
+                android:drawableLeft="@drawable/info_button"
+                android:text="@string/more_info" />
+
+            <ImageView
+                android:id="@+id/image_four"
+                style="@style/interview_person_image"
+                android:layout_marginLeft="50dp"
+                android:layout_toRightOf="@id/interview_button_four_one"
+                android:background="@drawable/custom_image_shape"
+                android:contentDescription="@string/person_four"
+                android:src="@drawable/laurer" />
+
+            <SeekBar
+                android:id="@+id/progress_bar_four"
+                android:layout_width="500dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/more_info_button_four"
+                android:layout_marginBottom="15dp"
+                android:layout_marginTop="15dp" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/dialoge_title"
+        android:contentDescription="@string/start_interview" />
+
+</RelativeLayout>

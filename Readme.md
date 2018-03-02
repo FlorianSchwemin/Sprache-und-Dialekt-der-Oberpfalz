@@ -1,0 +1,7 @@
+# Sprache und Dialekt der Oberpfalz
+
+Dieses Projekt ist Teil der Ausstellung "Wie klingt die Oberpfalz?", die vom [Lehrstuhl für Vergleichende Kulturwissenschaft](http://www.uni-regensburg.de/sprache-literatur-kultur/vergleichende-kulturwissenschaft/startseite/index.html) der [Unversität Regensburg](http://www.uni-regensburg.de/) konzipiert wurde. Die Anwendung wurde im Sommersemester 2013 von Philipp Röhl, Johannes Aigner und Thiemo Kersting im Rahmen des Android-Kurses des [Lehrstuhls für Medieninformatik](http://www.uni-regensburg.de/sprache-literatur-kultur/medieninformatik/) an der Universität Regensburg  entwickelt. 
+
+Die Anwendung „Sprache & Dialekt der Oberpfalz“ ist im Laufe einer Projekt-Arbeit der Medieninformatik-Studenten der Universität Regensburg in Zusammenarbeit mit Kulturwissenschaft-Studenten entstanden. Die Applikation ist nur für ein Tablet (Toshiba AT300SE) gedacht welches in einer Ausstellung verwendet wird und wurde deswegen speziell für dieses Tablet entwickelt. 
+
+Die verwendeten Audio-Dateien und Hörbeispiele, wurden freundlicherweise vom Sprechenden Sprachatlas von Bayern der Landesbibliothek Bayern und von den Kulturwissenschaftsstudenten der Universität Regensburg zur Verfügung gestellt. Weitere Informationen finden Sie unter www.bayerische-landesbibliothek-online.de/sprachatlas.

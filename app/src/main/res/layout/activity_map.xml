@@ -1,0 +1,270 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/background_vorschlag_philipp_klein"
+    android:paddingBottom="@dimen/activity_vertical_padding"
+    android:paddingLeft="@dimen/activity_horizontal_padding"
+    android:paddingTop="@dimen/activity_vertical_padding"
+    tools:context=".MapActivity" >
+
+    <!-- contains the map as background, the map buttons, the back- and the map help button -->
+    <RelativeLayout
+        android:id="@+id/map_container"
+        android:layout_height="match_parent"
+        android:layout_width="800dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/karte_fuer_map_activity_philipp" >
+
+        <Button
+            android:id="@+id/button_waldm"
+            style="@style/MapButtonStyle"
+            android:layout_marginLeft="550dp"
+            android:layout_marginTop="335dp"
+            android:background="@drawable/map_button_img" />
+
+        <Button
+            android:id="@+id/button_tir"
+            style="@style/MapButtonStyle"
+            android:layout_marginLeft="380dp"
+            android:layout_marginTop="75dp"
+            android:background="@drawable/map_button_img" />
+
+        <Button
+            android:id="@+id/button_pressath"
+            style="@style/MapButtonStyle"
+            android:layout_marginLeft="230dp"
+            android:layout_marginTop="175dp"
+            android:background="@drawable/map_button_img" />
+
+        <Button
+            android:id="@+id/button_niedermur"
+            style="@style/MapButtonStyle"
+            android:layout_marginLeft="330dp"
+            android:layout_marginTop="290dp"
+            android:background="@drawable/map_button_img" />
+
+        <Button
+            android:id="@+id/button_neumar"
+            style="@style/MapButtonStyle"
+            android:layout_marginLeft="140dp"
+            android:layout_marginTop="360dp"
+            android:background="@drawable/map_button_img" />
+
+        <Button
+            android:id="@+id/button_kallm"
+            style="@style/MapButtonStyle"
+            android:layout_marginLeft="280dp"
+            android:layout_marginTop="430dp"
+            android:background="@drawable/map_button_img" />
+
+        <Button
+            android:id="@+id/button_pfat"
+            style="@style/MapButtonStyle"
+            android:layout_marginLeft="410dp"
+            android:layout_marginTop="495dp"
+            android:background="@drawable/map_button_img" />
+
+        <Button
+            android:id="@+id/map_activity_back_button"
+            style="@style/button_style_interview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:drawableLeft="@drawable/navigation_back"
+            android:text="@string/back"
+            android:textSize="@dimen/info_box_play_button_text_size" />
+
+        <Button
+            android:id="@+id/map_help_button"
+            style="@style/button_style_interview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:text="@string/help_button_text"
+            android:drawableLeft="@drawable/info_button"
+            android:textSize="@dimen/info_box_play_button_text_size" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/info_box_container"
+        style="@style/info_box_style"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="100dp"
+        android:layout_toRightOf="@id/map_container"
+        android:paddingBottom="40dp"
+        android:paddingLeft="35dp"
+        android:paddingTop="20dp" 
+        android:paddingRight="10dp">
+
+        <TextView
+            android:id="@+id/titel_view"
+            style="@style/question_text_style"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/info_box_instructions_title"
+            android:textColor="@color/info_box_title_color"
+            android:textSize="@dimen/title_size" />
+
+        <TextView
+            android:id="@+id/box_text_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/titel_view"
+            android:layout_marginTop="20dp"
+            android:text="@string/info_box_anleitung_text"
+            android:textColor="@color/yellow_text_color"
+            android:textSize="@dimen/text_size" />
+
+        <RelativeLayout
+            android:id="@+id/play_button_container"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentRight="true"
+            android:layout_below="@id/box_text_content"
+            android:layout_marginTop="10dp"
+            android:visibility="invisible" >
+
+            <Button
+                android:id="@+id/info_box_playsound_button1"
+                style="@style/info_box_playbutton_style" />
+
+            <Button
+                android:id="@+id/info_box_playsound_button2"
+                style="@style/info_box_playbutton_style"
+                android:layout_below="@id/info_box_playsound_button1" />
+
+            <Button
+                android:id="@+id/info_box_playsound_button3"
+                style="@style/info_box_playbutton_style"
+                android:layout_below="@id/info_box_playsound_button2" />
+
+            <Button
+                android:id="@+id/info_box_playsound_button4"
+                style="@style/info_box_playbutton_style"
+                android:layout_below="@id/info_box_playsound_button3" />
+
+            <Button
+                android:id="@+id/info_box_playsound_button5"
+                style="@style/info_box_playbutton_style"
+                android:layout_below="@id/info_box_playsound_button4" />
+
+            <Button
+                android:id="@+id/info_box_playsound_button6"
+                style="@style/info_box_playbutton_style"
+                android:layout_below="@id/info_box_playsound_button5" />
+
+            <Button
+                android:id="@+id/info_box_playsound_button7"
+                style="@style/info_box_playbutton_style"
+                android:layout_below="@id/info_box_playsound_button6" />
+
+            <Button
+                android:id="@+id/info_box_playsound_button8"
+                style="@style/info_box_playbutton_style"
+                android:layout_below="@id/info_box_playsound_button7" />
+
+            <Button
+                android:id="@+id/info_box_playsound_button9"
+                style="@style/info_box_playbutton_style"
+                android:layout_below="@id/info_box_playsound_button8" />
+
+            <Button
+                android:id="@+id/info_box_playsound_button10"
+                style="@style/info_box_playbutton_style"
+                android:layout_below="@id/info_box_playsound_button9" />
+
+            <TextView
+                android:id="@+id/info_box_playsound_button_text1"
+                style="@style/info_box_playbutton_text_style"
+                android:layout_alignBottom="@+id/info_box_playsound_button1"
+                android:layout_toRightOf="@id/info_box_playsound_button1"
+                android:text="@string/text_audio_bsp_1" />
+
+            <TextView
+                android:id="@+id/info_box_playsound_button_text2"
+                style="@style/info_box_playbutton_text_style"
+                android:layout_alignBottom="@+id/info_box_playsound_button2"
+                android:layout_toRightOf="@id/info_box_playsound_button2"
+                android:text="@string/text_audio_bsp_2" />
+
+            <TextView
+                android:id="@+id/info_box_playsound_button_text3"
+                style="@style/info_box_playbutton_text_style"
+                android:layout_alignBottom="@+id/info_box_playsound_button3"
+                android:layout_toRightOf="@id/info_box_playsound_button3"
+                android:text="@string/text_audio_bsp_3" />
+
+            <TextView
+                android:id="@+id/info_box_playsound_button_text4"
+                style="@style/info_box_playbutton_text_style"
+                android:layout_alignBottom="@+id/info_box_playsound_button4"
+                android:layout_toRightOf="@id/info_box_playsound_button4"
+                android:text="@string/text_audio_bsp_4" />
+
+            <TextView
+                android:id="@+id/info_box_playsound_button_text5"
+                style="@style/info_box_playbutton_text_style"
+                android:layout_alignBottom="@+id/info_box_playsound_button5"
+                android:layout_toRightOf="@id/info_box_playsound_button5"
+                android:text="@string/text_audio_bsp_5" />
+
+            <TextView
+                android:id="@+id/info_box_playsound_button_text6"
+                style="@style/info_box_playbutton_text_style"
+                android:layout_alignBottom="@+id/info_box_playsound_button6"
+                android:layout_toRightOf="@id/info_box_playsound_button6"
+                android:text="@string/text_audio_bsp_6" />
+
+            <TextView
+                android:id="@+id/info_box_playsound_button_text7"
+                style="@style/info_box_playbutton_text_style"
+                android:layout_alignBottom="@+id/info_box_playsound_button7"
+                android:layout_toRightOf="@id/info_box_playsound_button7"
+                android:text="@string/text_audio_bsp_7" />
+
+            <TextView
+                android:id="@+id/info_box_playsound_button_text8"
+                style="@style/info_box_playbutton_text_style"
+                android:layout_alignBottom="@+id/info_box_playsound_button8"
+                android:layout_toRightOf="@id/info_box_playsound_button8"
+                android:text="@string/text_audio_bsp_8" />
+
+            <TextView
+                android:id="@+id/info_box_playsound_button_text9"
+                style="@style/info_box_playbutton_text_style"
+                android:layout_alignBottom="@+id/info_box_playsound_button9"
+                android:layout_toRightOf="@id/info_box_playsound_button9"
+                android:text="@string/text_audio_bsp_9" />
+
+            <TextView
+                android:id="@+id/info_box_playsound_button_text10"
+                style="@style/info_box_playbutton_text_style"
+                android:layout_alignBottom="@+id/info_box_playsound_button10"
+                android:layout_toRightOf="@id/info_box_playsound_button10"
+                android:text="@string/text_audio_bsp_10" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/thanx_text_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:text="@string/info_box_thanx_text"
+            android:textSize="@dimen/thanx_text_size" />
+    </RelativeLayout>
+
+    <!-- view to cover the right side of the info box border -->
+    <View
+        android:layout_width="2dp"
+        android:layout_height="match_parent"
+        android:layout_alignParentRight="true"
+        android:background="@android:color/black" />
+
+</RelativeLayout>
